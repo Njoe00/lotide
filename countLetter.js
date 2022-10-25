@@ -29,3 +29,5 @@ const assertEqual = function(actual, expected) {
 
 assertEqual(countLetters('LHL'));
 assertEqual(countLetters("lighthouse in the house"));
+
+module.exports = countLetters;
