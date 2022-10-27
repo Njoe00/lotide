@@ -1,14 +1,10 @@
-// look through an object value and the first truthly
-// return key of that key value pair
-// else returned undefined
 const findKey = function(keys, value) {
   for (let val in keys) {
-    console.log('test1', keys[val], 'test2', value(keys[val]));
     if (value(keys[val])) {
       return val;
     }
   }
-  return 'sad boi';
+  return false;
 };
 
 console.log(findKey({
